@@ -1,13 +1,13 @@
 {
-  "homepage": "",
+  "homepage": "https://FatouNdour30.github.io/Essayage_Project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "build": "vite build",
+    "deploy": "vite build && gh-pages -d dist",
+    "predeploy": "rm -rf dist",
     "dev": "vite",
-    "build": "vite build --outDir dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
